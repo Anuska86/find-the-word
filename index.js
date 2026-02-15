@@ -31,10 +31,16 @@ window.addEventListener("DOMContentLoaded", () => {
       if (wordSearch !== "") {
         const regExp = new RegExp(wordSearch, "gi");
 
-        testTextEl.innerHTML = originalHTLM.replace(
-          regExp,
-          "<span class='word-search-span'>$&</span>",
-        );
+        if (regExp.test(originalHTLM)) {
+          testTextEl.innerHTML = originalHTLM.replace(
+            regExp,
+            "<span class='word-search-span'>$&</span>",
+          );
+        } else {
+          alert(`The word ${wordSearch} was not found in the text`);
+          inputQ.value = "";
+          testTextEl.innerHTML = originalHTLM;
+        }
       } else {
         testTextEl.innerHTML = originalHTLM;
       }
