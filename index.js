@@ -1,13 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
   const inputQ = document.querySelector("#word-search");
-  const textQ = document.querySelector("#test-text");
 
-  const textContainer = document.querySelector(".text-container");
+  const textContainer = document.querySelector("#test-text");
 
   const resetBtn = document.querySelector(".reset-button");
   const displayTestBtn = document.querySelector(".test-text-button");
 
-  const originalText = textQ.innerText;
+  const originalHTLM = textContainer.innerHTML; //Original text version
 
   displayTestBtn.addEventListener("click", () => {
     textContainer.classList.toggle("show");
@@ -17,9 +16,6 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
       displayTestBtn.textContent = "Display a test text";
     }
-
-    displayTestBtn.textContainer = "Text Displayed!";
-    displayTestBtn.disabled = true;
   });
 
   //Search logical
@@ -30,12 +26,12 @@ window.addEventListener("DOMContentLoaded", () => {
       if (wordSearch !== "") {
         const regExp = new RegExp(wordSearch, "gi");
 
-        textQ.innerHTML = originalText.replace(
+        textContainer.innerHTML = originalHTLM.replace(
           regExp,
           "<span class='word-search-span'>$&</span>",
         );
       } else {
-        textQ.innerHTML = originalText;
+        textContainer.innerHTML = originalHTLM;
       }
     }
   });
@@ -44,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   resetBtn.addEventListener("click", () => {
     inputQ.value = "";
-    textQ.innerHTML = originalText;
+    textContainer.innerHTML = originalHTLM;
     console.log("App reseted!");
   });
 });
