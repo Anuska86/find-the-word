@@ -4,5 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   inputQ.addEventListener("keydown", (event) => {
     let word = inputQ.value;
+    console.log(word);
   });
 });
