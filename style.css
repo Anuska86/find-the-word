@@ -7,19 +7,41 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Funnel Display", sans-serif;
-
-  background: linear-gradient(135deg, #b4e9a7, #41643b);
-  color: #2d3436;
+  background: radial-gradient(circle at center, #2d3436 0%, #000 100%);
+  color: #eee;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 800px;
-  gap: 20px;
-  padding: 20px;
+  width: 95%;
+  max-width: 900px;
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  border-radius: 40px;
+  border: 4px solid #333;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(108, 92, 231, 0.2);
+  position: relative;
+}
+
+main::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #333;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #a29bfe;
+  text-shadow: 0 0 10px rgba(162, 155, 254, 0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
 }
 
 /*Fonts*/
@@ -34,25 +56,26 @@ main {
 /*Word Search Container*/
 
 .word-search-container {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 #word-search {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #444;
+  color: #fff;
   padding: 12px;
-  border: 2px solid #ddd;
   border-radius: 8px;
-  font-size: 1rem;
-  outline: none;
-  transition: border-color 0.3s;
 }
 
 #word-search:focus {
@@ -63,12 +86,23 @@ main {
 
 .text-container {
   display: none;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  line-height: 1.8;
-  font-size: 1.1rem;
+  background-color: #0c0c0c;
+  color: #00ff9d;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #1f4037;
+  max-height: 400px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  box-shadow: inset 0 0 15px rgba(0, 255, 157, 0.1);
+}
+
+.text-container::-webkit-scrollbar {
+  width: 8px;
+}
+.text-container::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
 }
 
 .text-container.show {
@@ -101,12 +135,12 @@ main {
 /*Highlight Word*/
 
 .word-search-span {
-  background-color: #589b67;
+  background-color: #00ff9d;
   color: #000;
   font-weight: bold;
-  border-radius: 5px;
-  padding: 2px;
-  box-shadow: 0 0 5px rgba(255, 243, 59, 0.5);
+  border-radius: 2px;
+  padding: 0 4px;
+  box-shadow: 0 0 10px #00ff9d;
 }
 
 /*BUTTONS*/
@@ -115,6 +149,7 @@ main {
 
 .test-text-button {
   padding: 10px;
+  width: 200px;
   background-color: #6c5ce7;
   color: white;
   border: none;
@@ -131,6 +166,7 @@ main {
 /*Reset button*/
 .reset-button {
   padding: 10px;
+  width: 200px;
   background-color: #ff7675;
   color: white;
   border: none;
@@ -138,10 +174,15 @@ main {
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s;
+  margin-right: 5px;
 }
 
 .reset-button:hover {
   background-color: #d63031;
+}
+
+.button-container {
+  margin: 25px;
 }
 
 /*Errors*/
