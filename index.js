@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const errorMsg = document.querySelector("#error-message");
 
-  const originalHTLM = testTextEl.innerHTML; //Original text version
+  const originalHTML = testTextEl.innerHTML; //Original text version
 
   //Display test text button
 
@@ -29,6 +29,13 @@ window.addEventListener("DOMContentLoaded", () => {
     if (event.key === "Enter") {
       let wordSearch = inputQ.value.trim();
 
+      if (wordSearch === "") {
+        errorMsg.textContent = "Please enter a word to search.";
+        errorMsg.style.display = "block";
+        errorMsg.style.color = "#d63031";
+        return;
+      }
+
       const isTextVisible = textContainer.classList.contains("show");
 
       if (!isTextVisible) {
@@ -46,8 +53,8 @@ window.addEventListener("DOMContentLoaded", () => {
       if (wordSearch !== "") {
         const regExp = new RegExp(wordSearch, "gi");
 
-        if (regExp.test(originalHTLM)) {
-          testTextEl.innerHTML = originalHTLM.replace(
+        if (regExp.test(originalHTML)) {
+          testTextEl.innerHTML = originalHTML.replace(
             regExp,
             "<span class='word-search-span'>$&</span>",
           );
@@ -55,7 +62,7 @@ window.addEventListener("DOMContentLoaded", () => {
           errorMsg.textContent = "Word not found!";
           errorMsg.style.color = "red";
           errorMsg.style.display = "block";
-          testTextEl.innerHTML = originalHTLM;
+          testTextEl.innerHTML = originalHTML;
           inputQ.value = "";
           inputQ.focus();
         }
@@ -67,8 +74,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   resetBtn.addEventListener("click", () => {
     inputQ.value = "";
-    testTextEl.innerHTML = originalHTLM;
+    testTextEl.innerHTML = originalHTML;
     errorMsg.style.display = "none";
-    console.log("App reseted!");
   });
 });
