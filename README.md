@@ -9,10 +9,6 @@ Users can toggle the text visibility, search for specific words with real-time h
 ![App Preview](./images/screenshot.png)
 ![App Search](./images/word-search.png)
 
-🚀 Live Demo:
-
-https://find-the-word-theta.vercel.app/
-
 ✨ Features:
 
 Toggle Visibility: Smoothly reveal or hide the text with a custom CSS animation.
@@ -55,3 +51,4 @@ Ana Sappia Rey - Frontend Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ana-sappia-rey/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anuska86)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://find-the-word-theta.vercel.app/)
