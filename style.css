@@ -103,13 +103,17 @@ main {
 
 .test-text-button {
   padding: 10px;
-  background-color: #ff7675;
+  background-color: #6c5ce7;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s;
+}
+
+.test-text-button:hover {
+  background-color: #a29bfe;
 }
 
 /*Reset button*/
