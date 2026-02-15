@@ -1,9 +1,11 @@
 window.addEventListener("DOMContentLoaded", () => {
   const inputQ = document.querySelector("#word-search");
   const textQ = document.querySelector("#text");
+  const resetBtn = document.querySelector(".reset-button");
 
   const originalText = textQ.innerText;
 
+  //Search logical
   inputQ.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       let wordSearch = inputQ.value.trim();
@@ -19,5 +21,13 @@ window.addEventListener("DOMContentLoaded", () => {
         textQ.innerHTML = originalText;
       }
     }
+  });
+
+  //Reset button
+
+  resetBtn.addEventListener("click", () => {
+    inputQ.value = "";
+    textQ.innerHTML = originalText;
+    console.log("App reseted!");
   });
 });
