@@ -6,12 +6,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Funnel Display", sans-serif;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/*Fonts*/
+
+.funnel-display-font {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /*Word Search Container*/
