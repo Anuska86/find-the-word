@@ -6,6 +6,9 @@ An interactive word-search and text-exploration tool built with Vanilla JavaScri
 
 Users can toggle the text visibility, search for specific words with real-time highlighting, and receive smart feedback based on the search state.
 
+![App Preview](./images/screenshot.png)
+![App Search](./images/word-search.png)
+
 🚀 Live Demo:
 
 Click here to view the live project on Vercel
