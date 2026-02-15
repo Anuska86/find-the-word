@@ -132,3 +132,15 @@ main {
 .reset-button:hover {
   background-color: #d63031;
 }
+
+/*Errors*/
+
+#error-message {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
