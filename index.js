@@ -1,9 +1,23 @@
 window.addEventListener("DOMContentLoaded", () => {
-  let inputQ = document.querySelector("#word-search");
-  let textQ = document.querySelector("#text");
+  const inputQ = document.querySelector("#word-search");
+  const textQ = document.querySelector("#text");
+
+  const originalText = textQ.innerText;
 
   inputQ.addEventListener("keydown", (event) => {
-    let word = inputQ.value;
-    console.log(word);
+    if (event.key === "Enter") {
+      let wordSearch = inputQ.value.trim();
+
+      if (wordSearch !== "") {
+        const regExp = new RegExp(wordSearch, "gi");
+
+        textQ.innerHTML = originalText.replace(
+          regExp,
+          "<span class='word-search-span'>$&</span>",
+        );
+      } else {
+        textQ.innerHTML = originalText;
+      }
+    }
   });
 });

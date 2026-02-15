@@ -40,3 +40,13 @@ main {
 .text-container {
   background-color: blueviolet;
 }
+
+/*Highlight Word*/
+
+.word-search-span {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0 2px;
+}
