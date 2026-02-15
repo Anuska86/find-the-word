@@ -1,0 +1,19 @@
+{
+  "name": "find-the-word",
+  "version": "1.0.0",
+  "description": "Find a word in a text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anuska86/find-the-word.git"
+  },
+  "author": "Ana Sappia Rey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anuska86/find-the-word/issues"
+  },
+  "homepage": "https://github.com/Anuska86/find-the-word#readme"
+}
