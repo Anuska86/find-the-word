@@ -11,7 +11,7 @@ Users can toggle the text visibility, search for specific words with real-time h
 
 🚀 Live Demo:
 
-Click here to view the live project on Vercel
+https://find-the-word-theta.vercel.app/
 
 ✨ Features:
 
