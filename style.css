@@ -177,6 +177,10 @@ h1 {
 
 /*BUTTONS*/
 
+.button-container {
+  margin: 25px;
+}
+
 /*Test text button*/
 
 .test-text-button {
@@ -213,8 +217,23 @@ h1 {
   background-color: #d63031;
 }
 
-.button-container {
-  margin: 25px;
+/*User's text button*/
+
+.user-text-button {
+  padding: 10px;
+  width: 200px;
+  background-color: #5189c9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-right: 5px;
+}
+
+.user-text-button:hover {
+  background-color: #6b9acf;
 }
 
 /*Errors*/
