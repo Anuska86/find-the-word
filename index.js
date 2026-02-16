@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const originalHTML = testTextEl.innerHTML; //Original text version
 
-  //Display test text button
+  //Test-text button inside text
 
   displayTestBtn.addEventListener("click", () => {
     textContainer.classList.toggle("show");
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
       : "Display a test text";
   });
 
-  //Display text area for the user
+  //Textarea button inside text
 
   displayTextareaBtn.addEventListener("click", () => {
     userTextContainer.classList.toggle("show");
@@ -91,3 +91,5 @@ window.addEventListener("DOMContentLoaded", () => {
     errorMsg.style.display = "none";
   });
 });
+
+//Display the user's text
