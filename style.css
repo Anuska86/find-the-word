@@ -126,14 +126,17 @@ h1 {
 /*User's text container*/
 .user-text-container {
   display: none;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  background: rgba(30, 30, 30, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #444;
 }
 
 .user-text-container.show {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
 }
 
 /*Textarea*/
@@ -238,6 +241,18 @@ h1 {
 
 .user-text-button:hover {
   background-color: #6b9acf;
+}
+
+/*Text area button*/
+
+.save-text-button {
+  background-color: #00ff9d;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*Errors*/

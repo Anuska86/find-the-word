@@ -5,14 +5,16 @@ window.addEventListener("DOMContentLoaded", () => {
   const userTextContainer = document.querySelector(".user-text-container");
 
   const testTextEl = document.querySelector("#test-text");
+  const userTextArea = document.querySelector("#user-text-area");
 
   const resetBtn = document.querySelector(".reset-button");
   const displayTestBtn = document.querySelector(".test-text-button");
   const displayTextareaBtn = document.querySelector(".user-text-button");
+  const saveTextBtn = document.querySelector(".save-text-button");
 
   const errorMsg = document.querySelector("#error-message");
 
-  const originalHTML = testTextEl.innerHTML; //Original text version
+  let originalHTML = testTextEl.innerHTML; //Original text version
 
   //Test-text button inside text
 
@@ -90,6 +92,24 @@ window.addEventListener("DOMContentLoaded", () => {
     testTextEl.innerHTML = originalHTML;
     errorMsg.style.display = "none";
   });
-});
 
-//Display the user's text
+  //Save the user's text
+
+  saveTextBtn.addEventListener("click", () => {
+    const newContent = userTextArea.value.trim();
+
+    if (newContent !== "") {
+      originalHTML = `<p>${newContent}</p>`;
+
+      testTextEl.innerHTML = originalHTML;
+
+      textContainer.classList.add("show");
+      displayTestBtn.textContent = "Hide text";
+
+      userTextContainer.classList.remove("show");
+      displayTextareaBtn.textContent = "Add here your text";
+
+      console.log("New text loaded into the tablet!");
+    }
+  });
+});
