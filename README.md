@@ -8,42 +8,47 @@ Users can toggle the text visibility, search for specific words with real-time h
 
 ![App Preview](./images/screenshot.png)
 ![App Search](./images/word-search.png)
+![App User's Text](./images/user-textarea.png)
 
 ✨ Features:
 
-Toggle Visibility: Smoothly reveal or hide the text with a custom CSS animation.
+- Toggle Visibility: Smoothly reveal or hide the text with a custom CSS animation.
 
-Intelligent Search: Uses Regular Expressions (RegExp) to find and highlight every instance of a word throughout the text.
+- Custom Input: Users can now paste their own text into a virtual terminal to search through personal documents or different stories.
 
-UX Validation: \* Prevents searching if the text isn't displayed yet.
+- Intelligent Search: Uses Regular Expressions (RegExp) to find and highlight every instance of a word throughout the text.
 
-Warns the user if the search input is empty.
+- UX Validation: \* Prevents searching if the text isn't displayed yet.
 
-Alerts the user if the word is not found in the excerpt.
+- Warns the user if the search input is empty.
 
-Responsive Design: Optimized for both desktop and mobile viewing with a "glassmorphism" UI style.
+- Alerts the user if the word is not found in the excerpt.
 
-Reset Functionality: Quickly clear highlights and inputs to start over.
+- Responsive Design: Optimized for both desktop and mobile viewing with a "glassmorphism" UI style.
+
+- Reset Functionality: Quickly clear highlights and inputs to start over.
 
 🛠️ Tech Stack:
 
-HTML5: Semantic structure for accessibility.
+- HTML5: Semantic structure for accessibility.
 
-CSS3: Custom animations, Flexbox layout, and backdrop filters for the glassmorphism effect.
+- CSS3: Custom animations, Flexbox layout, and backdrop filters for the glassmorphism effect.
 
-JavaScript (ES6+): DOM manipulation, event listeners, and Regular Expressions.
+- JavaScript (ES6+): DOM manipulation, event listeners, and Regular Expressions.
 
-Google Fonts: "Funnel Display" for a modern, clean look.
+- Google Fonts: "Funnel Display" for a modern, clean look.
 
 📝 How to Use:
 
-Click "Display a test text" to reveal the book chapter.
+- Click "Display a test text" to reveal the book chapter (to test the app).
 
-Type a word (e.g., "computer" or "two") into the search bar.
+- Click 'Add here your text' to open the input terminal, paste your content, and hit 'Save' to load it into the tablet
 
-Press Enter to see all matches highlighted in green.
+- Type a word (e.g., "computer" or "two") into the search bar.
 
-Click "Clear the search input" or "Hide text" to reset the view.
+- Press Enter to see all matches highlighted in green.
+
+- Click "Clear the search input" or "Hide text" to reset the view.
 
 ## 👤 Author
 
