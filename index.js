@@ -2,11 +2,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const inputQ = document.querySelector("#word-search");
 
   const textContainer = document.querySelector(".text-container");
+  const userTextContainer = document.querySelector(".user-text-container");
 
   const testTextEl = document.querySelector("#test-text");
 
   const resetBtn = document.querySelector(".reset-button");
   const displayTestBtn = document.querySelector(".test-text-button");
+  const displayTextareaBtn = document.querySelector(".user-text-button");
 
   const errorMsg = document.querySelector("#error-message");
 
@@ -19,6 +21,17 @@ window.addEventListener("DOMContentLoaded", () => {
     displayTestBtn.textContent = textContainer.classList.contains("show")
       ? "Hide text"
       : "Display a test text";
+  });
+
+  //Display text area for the user
+
+  displayTextareaBtn.addEventListener("click", () => {
+    userTextContainer.classList.toggle("show");
+    displayTextareaBtn.textContent = userTextContainer.classList.contains(
+      "show",
+    )
+      ? "Hide the text container"
+      : "Add here your text";
   });
 
   //Search logic

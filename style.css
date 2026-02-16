@@ -125,6 +125,10 @@ h1 {
 
 /*User's text container*/
 .user-text-container {
+  display: none;
+}
+
+.user-text-container.show {
   display: flex;
   flex-direction: column;
   align-items: center;
