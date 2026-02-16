@@ -121,6 +121,38 @@ h1 {
   }
 }
 
+/*USER'S TEXT*/
+
+/*User's text container*/
+.user-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/*Textarea*/
+
+#user-text-area {
+  width: 100%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #00ff9d;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "Courier New", monospace;
+  resize: none;
+  margin-top: 20px;
+  outline: none;
+}
+
+#user-text-area:focus {
+  border-color: #00ff9d;
+  box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+}
+
 /*Test text*/
 
 #test-text p {
