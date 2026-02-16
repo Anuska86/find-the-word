@@ -14,11 +14,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const errorMsg = document.querySelector("#error-message");
 
-  let originalHTML = testTextEl.innerHTML; //Original text version
+  const masterTestText = testTextEl.innerHTML; //Permanent copy of the test text
+
+  let originalHTML = masterTestText;
 
   //Test-text button inside text
 
   displayTestBtn.addEventListener("click", () => {
+    if (!textContainer.classList.contains("show")) {
+      originalHTML = masterTestText;
+      testTextEl.innerHTML.originalHTML;
+    }
+
     textContainer.classList.toggle("show");
     displayTestBtn.textContent = textContainer.classList.contains("show")
       ? "Hide text"
@@ -100,7 +107,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (newContent !== "") {
       originalHTML = `<p>${newContent}</p>`;
-
       testTextEl.innerHTML = originalHTML;
 
       textContainer.classList.add("show");
