@@ -1,4 +1,4 @@
-# find-the-word
+# find-your-word
 
 📖 Find Your Word:
 
