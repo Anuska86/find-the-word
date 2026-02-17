@@ -8,7 +8,7 @@ Users can toggle the text visibility, search for specific words with real-time h
 
 ![Interface of the 'Find Your Word' app showing a dark sci-fi tablet design with a glowing border.](./images/screenshot.png)
 
-![Search functionality in action with the word 'stratospheric' highlighted in a glowing green box within the text.](./images/word-search.png)
+![Search functionality in action with the word 'question' highlighted in a glowing green box within the text.](./images/word-search.png)
 
 ![The custom text editor mode where users can type or paste their own stories into the terminal interface.](./images/user-textarea.png)
 
