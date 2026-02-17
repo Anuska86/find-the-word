@@ -2,13 +2,15 @@
 
 📖 Find Your Word:
 
-An interactive word-search and text-exploration tool built with Vanilla JavaScript. This project features an excerpt from the sci-fi novel "Project Hail Mary" by Andy Weir.
+An interactive text-exploration tool built with Vanilla JavaScript, featuring a sci-fi interface inspired by Andy Weir's Project Hail Mary.
 
 Users can toggle the text visibility, search for specific words with real-time highlighting, and receive smart feedback based on the search state.
 
-![App Preview](./images/screenshot.png)
-![App Search](./images/word-search.png)
-![App User's Text](./images/user-textarea.png)
+![Interface of the 'Find Your Word' app showing a dark sci-fi tablet design with a glowing border.](./images/screenshot.png)
+
+![Search functionality in action with the word 'stratospheric' highlighted in a glowing green box within the text.](./images/word-search.png)
+
+![The custom text editor mode where users can type or paste their own stories into the terminal interface.](./images/user-textarea.png)
 
 ✨ Features:
 
